@@ -1,19 +1,68 @@
 {
-  "name": "bitcore-build",
-  "version": "0.9.0",
-  "description": "A helper for common tasks to build bitcore modules'",
-  "main": "index.js",
-  "scripts": {
-    "test": "gulp test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/bitpay/bitcore-build"
-  },
-  "keywords": [
-    "bitcore"
+  "_args": [
+    [
+      {
+        "raw": "mangacore-build@github:mangacoinproject/mangacore-build",
+        "scope": null,
+        "escapedName": "mangacore-build",
+        "name": "mangacore-build",
+        "rawSpec": "github:mangacoinproject/mangacore-build",
+        "spec": "github:mangacoinproject/mangacore-build",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:mangacoinproject/mangacore-build.git",
+          "sshUrl": "git+ssh://git@github.com/mangacoinproject/mangacore-build.git",
+          "httpsUrl": "git+https://github.com/mangacoinproject/mangacore-build.git",
+          "gitUrl": "git://github.com/mangacoinproject/mangacore-build.git",
+          "shortcut": "github:mangacoinproject/mangacore-build",
+          "directUrl": "https://raw.githubusercontent.com/mangacoinproject/mangacore-build/master/package.json"
+        }
+      },
+      "/home/mangacoin/test/mangacoinwallet/mangacore-lib"
+    ]
   ],
+  "_from": "mangacoinproject/mangacore-build",
+  "_id": "mangacore-build@0.9.0",
+  "_inCache": true,
+  "_location": "/mangacore-build",
+  "_phantomChildren": {
+    "deep-eql": "0.1.3"
+  },
+  "_requested": {
+    "raw": "mangacore-build@github:mangacoinproject/mangacore-build",
+    "scope": null,
+    "escapedName": "mangacore-build",
+    "name": "mangacore-build",
+    "rawSpec": "github:mangacoinproject/mangacore-build",
+    "spec": "github:mangacoinproject/mangacore-build",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:mangacoinproject/mangacore-build.git",
+      "sshUrl": "git+ssh://git@github.com/mangacoinproject/mangacore-build.git",
+      "httpsUrl": "git+https://github.com/mangacoinproject/mangacore-build.git",
+      "gitUrl": "git://github.com/mangacoinproject/mangacore-build.git",
+      "shortcut": "github:mangacoinproject/mangacore-build",
+      "directUrl": "https://raw.githubusercontent.com/mangacoinproject/mangacore-build/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "git://github.com/mangacoinproject/mangacore-build.git#d4cfc1c50fca0ce0cf5059240fbaf8225d9ec951",
+  "_shasum": "82b5799752fab8a3889ca8de4dc24c51fa93dfa4",
+  "_shrinkwrap": null,
+  "_spec": "mangacore-build@github:mangacoinproject/mangacore-build",
+  "_where": "/home/mangacoin/test/mangacoinwallet/mangacore-lib",
+  "bugs": {
+    "url": "https://github.com/mangacoinproject/mangacore-build/issues"
+  },
   "contributors": [
+    {
+      "name": "negi",
+      "email": "negitronixy@gmail.com"
+    },
     {
       "name": "Esteban Ordano",
       "email": "esteban@bitpay.com"
@@ -35,11 +84,6 @@
       "email": "ematiu@gmail.com"
     }
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bitpay/bitcore-build/issues"
-  },
-  "homepage": "https://github.com/bitpay/bitcore-build",
   "dependencies": {
     "brfs": "^1.4.3",
     "browserify": "^13.1.1",
@@ -64,5 +108,26 @@
     "plato": "^1.7.0",
     "run-sequence": "^1.2.2",
     "zuul": "^3.11.1"
-  }
+  },
+  "description": "A helper for common tasks to build mangacore modules'",
+  "devDependencies": {},
+  "gitHead": "d4cfc1c50fca0ce0cf5059240fbaf8225d9ec951",
+  "homepage": "https://github.com/mangacoinproject/mangacore-build",
+  "keywords": [
+    "mangacore"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "mangacore-build",
+  "optionalDependencies": {},
+  "readme": "# mangacore-build\n\nA helper to add tasks to gulp.\n\n## Getting started\n\nInstall with:\n\n```sh\nnpm install mangacore-build\n```\n\nand use and require in your gulp file: \n\n```javascript\nvar gulp = require('gulp');\nvar mangacoreTasks = require('mangacore-build');\n\nmangacoreTasks('submodule');\ngulp.task('default', ['lint', 'test', 'browser', 'coverage']);\n```\n\n### Notes\n\n* There's no default task to allow for each submodule to set up their own configuration\n* If the module is node-only, avoid adding the browser tasks with:\n```javascript\nvar mangacoreTasks = require('mangacore-build');\nmangacoreTasks('submodule', {skipBrowsers: true});\n```\n\n## Contributing\n\nSee [CONTRIBUTING.md](https://github.com/mangacoinproject/mangacore-lib) on the main mangacore repo for information about how to contribute.\n\n## License\n\nCode released under [the MIT license](https://github.com/mangacoinproject/mangacore-lib/blob/master/LICENSE).\n\nCopyright 2015 BitPay, Inc. Bitcore is a trademark maintained by BitPay, Inc.\nCopyright 2018 The Mangacore Developers.\n\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mangacoinproject/mangacore-build.git"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "version": "0.9.0"
 }
